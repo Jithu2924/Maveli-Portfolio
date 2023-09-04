@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center center;
     background-blend-mode: difference;
-}
+    filter: invert(1);
 
 .layer6 .contact_us {
     position: relative;
