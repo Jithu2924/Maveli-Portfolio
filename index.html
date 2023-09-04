@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>MAVELI</title>
+        <link
+            rel="stylesheet"
+            href="resources/swiper js/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <link href='https://fonts.googleapis.com/css?family=Anek Malayalam' rel='stylesheet'>
+        <link rel="stylesheet" href="resources/css/loader.css" />
+        <link rel="stylesheet" href="resources/css/hamburger.css" />
+        <link rel="stylesheet" href="resources/css/home.css" />
+        <link rel="stylesheet" href="resources/css/about.css" />
+        <link rel="stylesheet" href="resources/css/services.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css" />
+        <link rel="stylesheet" href="resources/css/blog.css" />
+        <link rel="stylesheet" href="resources/css/contact.css" />
+        <link href="resources/mapbox-gl/mapbox-gl.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/logo.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body onload="loaded()">
+        <div class="loader">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+            <div class="c c4"></div>
+            <div class="c c5"></div>
+            <div class="c c6"></div>
+        </div>
+        <script>
+            let loader = document.querySelector(".loader");
+            function loaded() {
+                loader.classList.add("remove");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 1000);
+            }
+        </script>
+        <!-- HAMBURGER MENU BUTTON (responsively visible) -->
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- THE REAL NAVIGATION -->
+        <nav class="navigation">
+            <h1>
+                MR MAVELI
+                <div></div>
+                <div></div>
+            </h1>
+            <ul>
+                <li><a href="#" onclick="home()">home</a></li>
+                <li>
+                    <a
+                        href="#"
+                        onclick="about(); animate3.play(); animate4.play();"
+                        >about</a
+                    >
+                </li>
+                
+                <li><a href="#" onclick="portfolio()">portfolio</a></li>
+                <li><a href="#" onclick="blog()">blog</a></li>
+                <li>
+                    <a href="#" onclick="contact(); animate5.play()">contact</a>
+                </li>
+            </ul>
+            <p>&copy; ത്രേതായുഗം മാവേലി</p>
+        </nav>
+
+        <div class="container">
+            <div class="layer layer1 active">
+                <div class="home main">
+                    <div class="canvas_container">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content-for-home">
+                        <div class="img-container"></div>
+                        <h1 align="center">മാവേലി ഫ്രം പാതാളം</h1>
+                        <div class="social-icons">
+                            <div class="s-icon">
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="s-name">Facebook</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <div class="s-name">Tweeter</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <div class="s-name">GitHub</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="#">
+                                    <i class="fab fa-codepen"></i>
+                                </a>
+                                <div class="s-name">CodePen</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <div class="s-name">Instagram</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="#">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <div class="s-name">Email</div>
+                            </div>
+                        </div>
+
+                      
+
+                        <div class="titles-for-side-nav">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer2">
+                <div class="about main">
+                    <!-- SEGMENT FOR STYLING. -->
+                    <div class="styling">
+                        <div class="absolute box"></div>
+                        <div class="absolute circle"></div>
+                        <div class="absolute triangle"></div>
+                        <div class="absolute dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                            <div class="dot dot4"></div>
+                            <div class="dot dot5"></div>
+                            <div class="dot dot6"></div>
+                            <div class="dot dot7"></div>
+                            <div class="dot dot8"></div>
+                            <div class="dot dot9"></div>
+                            <div class="dot dot10"></div>
+                            <div class="dot dot11"></div>
+                            <div class="dot dot12"></div>
+                            <div class="dot dot13"></div>
+                            <div class="dot dot14"></div>
+                            <div class="dot dot15"></div>
+                            <div class="dot dot16"></div>
+                            <div class="dot dot17"></div>
+                            <div class="dot dot18"></div>
+                            <div class="dot dot19"></div>
+                            <div class="dot dot20"></div>
+                            <div class="dot dot21"></div>
+                            <div class="dot dot22"></div>
+                            <div class="dot dot23"></div>
+                            <div class="dot dot24"></div>
+                        </div>
+
+                        <svg
+                            class="wave absolute"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,320L48,277.3C96,235,192,149,288,122.7C384,96,480,128,576,165.3C672,203,768,245,864,234.7C960,224,1056,160,1152,112C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+
+                        <svg
+                            class="wave absolute opposite"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,224L48,213.3C96,203,192,181,288,192C384,203,480,245,576,218.7C672,192,768,96,864,64C960,32,1056,64,1152,101.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <!-- REAL CONTENT -->
+                    <div class="wrapper">
+                        <div class="face face1">
+                            <div class="content">
+                                <p>നമസ്കാരം,</p>
+                                <h1>ഞാൻ മാവേലി alias മഹാബലി</h1>
+                                <h6>(പാശ്ചാത്യ ഭാഷയിൽ വിവരണം)</h6>
+                                <p class="text">I am known as the legendary king of Kerala, a symbol of justice, prosperity, and benevolence.Through the ages, I have become a symbol of Kerala's cultural identity and a reminder of the values of justice, equality, and unity that continue to be cherished by the people of this vibrant state. As you explore the vibrant culture and traditions of Kerala, you will undoubtedly encounter my legacy, a testament to the enduring spirit of Maveli.</p>
+                            </div>
+                        </div>
+                        <div class="face face2"></div>
+                    </div>
+
+                    <!-- THE NAVIGATION OF ABOUT -->
+                    <nav class="about_nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#" data-text="one"
+                                    >കഴിവുകൾ</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-text="three">വിദ്യാഭ്യാസം</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="about_container">
+                        <!-- SKILL BOX -->
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="name">ജ്ഞാനം</div>
+                                <div class="value" style="left: 90%">90%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">പരോപകാരം</div>
+                                <div class="value" style="left: 95%">95%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 95%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">വിനയം</div>
+                                <div class="value" style="left: 85%">85%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 85%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">നേതൃത്വം</div>
+                                <div class="value" style="left: 70%">70%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 70%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">നീതി</div>
+                                <div class="value" style="left: 85%">85%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 85%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">ഐക്യം</div>
+                                <div class="value" style="left: 90%">90%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCE -->
+                        <div class="experience">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Sep 2020 - Present</i>
+                                <h2>Full Stack Developer</h2>
+                                <i class="name_company">Company Name</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quaerat est amet
+                                    voluptatibus, nam perferendis provident
+                                    veritatis cum, dolorum eaque voluptates
+                                    asperiores, nostrum voluptatum. Autem
+                                    incidunt praesentium tempora, minus suscipit
+                                    fugiat?
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Apr 2020 - Jan 2019</i>
+                                <h2>Full Stack Developer</h2>
+                                <i class="name_company">Company Name</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                </article>
+                            </div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Feb 2018 - Apr 2020</i>
+                                <h2>Full Stack Developer</h2>
+                                <i class="name_company">Company Name</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Aug 2014 - Feb 2018</i>
+                                <h2>Full Stack Developer</h2>
+                                <i class="name_company">Company Name</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                </article>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">Date: BC Something</i>
+                                <h2>Unknown</h2>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer3">
+            </div>
+            <div class="layer layer4">
+                <div class="portfolio main">
+                    <div class="tip main">
+                        <div class="allContent">
+                            <div class="description" style="display: none">
+                                <div class="pro_intro">
+                                    <div class="nameplate">
+                                        <h1>Wedding Couple</h1>
+                                        <span
+                                            >Category:
+                                            <span style="color: #999"
+                                                >Onam</span
+                                            ></span
+                                        >
+                                    </div>
+                                    <div class="other_text">
+                                        <h2>Project Brief:</h2>
+                                        <p
+                                            class="pro_brief"
+                                            style="
+                                                color: #999;
+                                                padding-left: 15px;
+                                            "
+                                        >
+                                            hejdjanjkabs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pro_info">
+                                    <h2> Info</h2>
+                                    <p class="Date">
+                                        <b>Date: </b>
+                                        <span style="color: #999">2020</span>
+                                    </p>
+                                    <p class="client">
+                                        <b>place: </b>
+                                        <span style="color: #999">xyz</span>
+                                    </p>
+                                    <p>
+                                        <b>Tools: </b>
+                                        <span style="color: #999"
+                                            >HTML, CSS, JavaScript</span
+                                        >
+                                    </p>
+                                    <p class="link">
+                                        <b>Web: </b>
+                                        <span style="color: #999"
+                                            ><a href="#"
+                                                >www.domain.com</a
+                                            ></span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+                                <div class="icon"></div>
+                            </button>
+                            <button class="exitButton">&times;</button>
+
+                            <div class="port_content">
+                                <div class="swiper-container-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="about_nav padding_top">
+                        <ul>
+                            <li>
+                                <a
+                                    class="filter active"
+                                    href="#"
+                                    data-filter="all"
+                                    >All</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".web"
+                                    >ഓണം</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".logo"
+                                    >കോളേജ്</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".card"
+                                    >പാതാളം</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".app"
+                                    >കേരള ചിത്രങ്ങൾ                                    </a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".icon"
+                                    >ഭക്ഷണം</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mymixcont">
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/1.jpg"
+                                alt=""
+                            />
+                            <span class="title">പുലികളി</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/5.jpg"
+                                alt=""
+                            />
+                            <span class="title">പായസം</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/1.jpg"
+                                alt=""
+                            />
+                            <span class="title">സിംഹാസനം</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/2.jpg"
+                                alt=""
+                            />
+                            <span class="title">പൂക്കളം</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/1.jpg"
+                                alt=""
+                            />
+                            <span class="title">തീരപ്രദേശം</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/2.jpg"
+                                alt=""
+                            />
+                            <span class="title">വാമനൻ</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/3.jpg"
+                                alt=""
+                            />
+                            <span class="title">വടംവലി</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/3.jpg"
+                                alt=""
+                            />
+                            <span class="title">പാതാളത്ത് പ്രജകൾ                            </span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/4.jpg"
+                                alt=""
+                            />
+                            <span class="title">വള്ളംകളി</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/4.jpg"
+                                alt=""
+                            />
+                            <span class="title">യുദ്ധം</span>
+                            <span class="port_link">view</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/1.jpg"
+                                alt=""
+                            />
+                            <span class="title">തിരുവാതിര</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/4.jpg"
+                                alt=""
+                            />
+                            <span class="title">ഇഡ്ഡലി</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/2.jpg"
+                                alt=""
+                            />
+                            <span class="title">ഇടനാട്</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/2.jpg"
+                                alt=""
+                            />
+                            <span class="title">ചെണ്ടമേളം</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/3.jpg"
+                                alt=""
+                            />
+                            <span class="title">നൃത്തം</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/5.jpg"
+                                alt=""
+                            />
+                            <span class="title">അപ്രതീക്ഷിത ചിത്രം
+                            </span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/4.jpg"
+                                alt=""
+                            />
+                            <span class="title">മുണ്ട്</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/2.jpg"
+                                alt=""
+                            />
+                            <span class="title">ദോശ</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/5.jpg"
+                                alt=""
+                            />
+                            <span class="title">പ്രജകൾക്കൊപ്പം രസം
+                            </span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/1.jpg"
+                                alt=""
+                            />
+                            <span class="title">സദ്യ</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/6.jpg"
+                                alt=""
+                            />
+                            <span class="title">അധ്യാപകർ</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/7.jpg"
+                                alt=""
+                            />
+                            <span class="title">അനുഗ്രഹങ്ങൾ</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/3.jpg"
+                                alt=""
+                            />
+                            <span class="title">മലനാട്</span>
+                            <span class="port_link">View</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/3.jpg"
+                                alt=""
+                            />
+                            <span class="title">പുട്ട്                            </span>
+                            <span class="port_link">View</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer5">
+                <div class="testimonial">
+                    <h1>
+                        <span>പ്രജകളുടെ അഭിപ്രയം            </span>
+                    </h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/img/icon1.png" alt="" />
+                                <h4>Saraswathi Nair</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    ഒരു അധ്യാപകനെന്ന നിലയിൽ ഞാൻ പലപ്പോഴും മാവേലിയുടെ കഥകൾ എന്റെ വിദ്യാർത്ഥികൾക്ക് പറഞ്ഞുകൊടുക്കാറുണ്ട്. നീതിയോടും ക്ഷേമത്തോടുമുള്ള അദ്ദേഹത്തിന്റെ പ്രതിബദ്ധത നമുക്കെല്ലാവർക്കും ഒരു ഉജ്ജ്വല മാതൃകയായി തുടരുന്നു. മാവേലിയുടെ കഥ നമ്മുടെ കുട്ടികളെ വിനയത്തിന്റെയും ഔദാര്യത്തിന്റെയും മൂല്യങ്ങൾ പഠിപ്പിക്കുന്നു, അത് നമ്മുടെ സംസ്കാരത്തെക്കുറിച്ച് ഞാൻ വിലമതിക്കുന്നു.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/icon2.png" alt="" />
+                                <h4>Kalyani Amma</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    മാവേലിയുടെ കാലം ഒരു സുവർണകാലമാണെന്ന് അമ്മൂമ്മ പറയുമായിരുന്നു. ആളുകൾ എങ്ങനെ സൗഹാർദ്ദത്തോടെ ജീവിക്കുകയും അവരുടെ വൈവിധ്യം ആഘോഷിക്കുകയും ചെയ്യുന്നതിനെക്കുറിച്ചുള്ള കഥകൾ അവൾ ഞങ്ങളോട് പറയുമായിരുന്നു. ഇത് അവൾ കൈമാറിയ ഒരു പാരമ്പര്യമാണ്, ഇപ്പോൾ ഞാൻ ഈ കഥകൾ എന്റെ കൊച്ചുമക്കളുമായി പങ്കിടുന്നു.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/icon3.png" alt="" />
+                                <h4>Rajeev Menon</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    മാവേലിയുടെ ഇതിഹാസം എന്റെ കലാസൃഷ്ടികളിൽ ആവർത്തിച്ചുള്ള വിഷയമാണ്. കേരളത്തിന്റെ സംസ്‌കാരത്തിന്റെ അന്തസത്തയും ആഴത്തിൽ വേരൂന്നിയ മൂല്യങ്ങളും അദ്ദേഹത്തിന്റെ കഥയിൽ ഉൾക്കൊള്ളുന്നു. നീതിയുടെയും അനുകമ്പയുടെയും പ്രതീകമായ ഈ മഹാനായ രാജാവിന് ആദരാഞ്ജലികൾ അർപ്പിക്കാൻ ഞാൻ എന്റെ ചിത്രങ്ങൾ ഉപയോഗിക്കുന്നു.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/icon4.png" alt="" />
+                                <h4>Suresh Kumar</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    ഞാൻ വെറുമൊരു കർഷകനാണെങ്കിലും, മാവേലിയുടെ പാരമ്പര്യവുമായി എനിക്ക് ആഴത്തിലുള്ള ബന്ധം തോന്നുന്നു. ഐശ്വര്യം തഴച്ചുവളർന്ന അദ്ദേഹത്തിന്റെ ഭരണകാലം നമ്മുടെ സുന്ദരഭൂമിയെ ഓർമിപ്പിക്കുന്നു. മാവേലി ഉദാഹരിച്ച കഠിനാധ്വാനത്തിന്റെയും ഔദാര്യത്തിന്റെയും പാരമ്പര്യത്തിന്റെ ഭാഗമാകാൻ കഴിഞ്ഞതിൽ ഞാൻ അഭിമാനിക്കുന്നു.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/icon5.png" alt="" />
+                                <h4>Geetha Krishnan</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    ഒരു പാചകക്കാരൻ എന്ന നിലയിൽ, ഈ വർഷത്തെ എന്റെ പ്രിയപ്പെട്ട സമയമാണ് ഓണം. മാവേലിയുടെ ബഹുമാനാർത്ഥം വിപുലമായ ഓണസദ്യ ഒരുക്കുന്നത് എനിക്ക് വലിയ സന്തോഷം നൽകുന്നു. പങ്കിടലും ഐക്യവും പ്രോത്സാഹിപ്പിച്ച ഈ ദയാലുവായ രാജാവിന്റെ ആഘോഷത്തിന് സംഭാവന നൽകുന്ന എന്റെ രീതിയാണിത്.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/icon6.png" alt="" />
+                                <h4>Arjun Menon</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    വളർന്നുവരുമ്പോൾ മാവേലിയുടെ വിവേകത്തിന്റെയും വിനയത്തിന്റെയും കഥകൾ കേട്ടു. ഈ കഥകൾ എന്നിൽ എന്റെ സമൂഹത്തോടും പരിസ്ഥിതിയോടും ഉത്തരവാദിത്തബോധം വളർത്തി. കേരളത്തിന്റെ നല്ല ഭാവിക്കായി പ്രവർത്തിക്കാൻ മാവേലിയുടെ പാരമ്പര്യം എന്നെ പ്രേരിപ്പിക്കുന്നു.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer6">
+                <div class="contact_us">
+                    <div id="map"></div>
+                    <address class="info_container">
+                        <div class="info info1">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="iname">Phone</span>
+                            <a href="tel:+8800000000000">+8800000000000</a>
+                            <a href="tel:+8811111111111">+8811111111111</a>
+                        </div>
+                        <div class="info info2">
+                            <i class="fas fa-home"></i>
+                            <span class="iname">Address</span>
+                            <a
+                                href="https://goo.gl/maps/2eou72zB3AEUAqZCA"
+                            >
+                                <h3>Maveli house</h3>
+                                <span>Mahabalipuram</span><br />
+                                <span>Paathalam</span>
+                            </a>
+                        </div>
+                        <div class="info info3">
+                            <i class="fas fa-envelope"></i>
+                            <span class="iname">Email</span>
+                            <a href="mailto:email1.gmail.com"
+                                >maveli@gmail.com</a
+                            >
+                            <a href="mailto:email2.gmail.com"
+                                >mahabali@gmail.com</a
+                            >
+                        </div>
+                    </address>
+
+                    <form action="#" method="post">
+                        <h1>ബന്ധപ്പെടുക</h1>
+                        <div class="inp_field">
+                            <i class="fas fa-user"></i>
+                            <input
+                                type="text"
+                                name="name"
+                                class="fname"
+                                id="fname"
+                                placeholder="Full Name"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-envelope"></i>
+                            <input
+                                type="email"
+                                name="email"
+                                class="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-angle-double-right"></i>
+                            <input
+                                type="text"
+                                name="subject"
+                                class="subject"
+                                id="subject"
+                                placeholder="Subject"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="5"
+                            class="message"
+                            id="message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                        <button class="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------JQUERY {https://jquery.com/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-----------------MIX IT UP {https://www.kunkalabs.com/mixitup/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/mixitup.min.js"></script>
+        <!-----------------SWIPER JS {https://swiperjs.com/} [USED IN portfolio.js, blog.js]----------------->
+        <script src="resources/swiper js/swiper-bundle.min.js"></script>
+        <!-----------------MAPBOX GL {https://www.mapbox.com/} [USED IN contact.js]----------------->
+        <script src="resources/mapbox-gl/mapbox-gl.js"></script>
+        <!-----------------EMAIL JS {https://www.emailjs.com/} [USED IN contact.js]----------------->
+        <script src="resources/js/email.min.js"></script>
+        <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_5OMETIDQ2Nm9qBMtaFNz4");
+            })();
+        </script>
+        <!-----------------VANILLA TILT JS {https://micku7zu.github.io/vanilla-tilt.js/}----------------->
+        <script src="resources/js/vanilla-tilt.min.js"></script>
+        <!-----------------ANIME JS {https://animejs.com/} [USED LOCALLY.]----------------->
+        <script src="resources/js/anime.min.js"></script>
+        <!-----------------LOCAL (HOME)----------------->
+        <script src="resources/js/home.js"></script>
+        <!-----------------LOCAL (ABOUT)----------------->
+        <script src="resources/js/about.js"></script>
+        <!-----------------LOCAL (SERVICES)----------------->
+        <script src="resources/js/services.js"></script>
+        <!-----------------LOCAL (PORTFOLIO)----------------->
+        <script src="resources/js/portfolio.js"></script>
+        <!-----------------LOCAL (BLOG)----------------->
+        <script src="resources/js/blog.js"></script>
+        <!-----------------LOCAL (CONTACT)----------------->
+        <script src="resources/js/contact.js"></script>
+        <!-----------------LOCAL (MAIN FILE)----------------->
+        <script src="resources/js/main.js"></script>
+
+        <!-----------------LOCAL (MAIN FILE { USED TO ANIMATE WEBPAGE.})----------------->
+        <script>
+            const animate1 = anime.timeline({
+                targets: ".circle",
+                loop: true,
+                duration: 2000,
+                direction: "alternate",
+                easing: "easeInOutQuad",
+            });
+            animate1.add({
+                translateX: 350,
+            });
+
+            let dot = document.querySelectorAll(".dot");
+            for (let i = 0; i < dot.length; i++) {
+                const ind = dot[i];
+                const animate2 = anime.timeline({
+                    targets: ind,
+                    loop: true,
+                    direction: "alternate",
+                    delay: i * 100,
+                });
+                animate2.add({
+                    scale: 2,
+                });
+            }
+
+            let span = document.querySelectorAll(".content .text span");
+            const animate3 = anime.timeline({
+                targets: span,
+                easing: "easeInOutExpo",
+                delay: anime.stagger(20, { direction: "reverse" }),
+                direction: "reverse",
+                autoplay: false,
+            });
+
+            animate3.add({
+                rotate: () => {
+                    return anime.random(-360, 360);
+                },
+                translateX: () => {
+                    return anime.random(-500, 500);
+                },
+                translateY: () => {
+                    return anime.random(-500, 500);
+                },
+                duration: 3000,
+            });
+
+            const animate4 = anime({
+                targets: ".button",
+                scale: [0, 1],
+                delay: anime.stagger(200, { start: 7000 }),
+                autoplay: false,
+            });
+
+            const animate5 = anime({
+                targets: [
+                    document.querySelectorAll(".info"),
+                    document.querySelectorAll(".inp_field"),
+                    ".message",
+                    ".submit",
+                ],
+                translateY: [50, 0],
+                rotateX: [90, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                duration: 750,
+                autoplay: false,
+                easing: "easeOutQuint",
+            });
+            
+            const animate6 = anime({
+                targets: ['.services .t_dummy', '.services .hero-text'],
+                duration: 1000,
+                scaleX: [0, 1],
+                delay: anime.stagger(300, {start: 1000}),
+                autoplay: false,
+            });
+
+            function resize() {
+                if (window.innerWidth <= 632) {
+                    animate5.play();
+                    animate3.play();
+                    animate4.play();
+                    animate6.play();
+                }
+            }
+            resize();
+            window.addEventListener("resize", resize);
+        </script>
+    </body>
+</html>
